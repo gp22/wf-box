@@ -17,21 +17,24 @@ export default function Edit ({ attributes, setAttributes }) {
 		>
 			<BlockControls>
 				<ToolbarGroup>
+
+				</ToolbarGroup>
+			</BlockControls>
+
+			<InspectorControls>
+				<PanelBody>
+					<h2>Box Padding</h2>
 					<RadioGroup
 						id="size-radiogroup"
 						label={__('Stack size', namespace)}
 						checked={size}
 						onChange={(value) => setAttributes({ size: value })}
 					>
+						<Radio value="none">None</Radio>
 						<Radio value="small">Small</Radio>
-						<Radio value="default">Normal</Radio>
+						<Radio value="medium">Medium</Radio>
 						<Radio value="large">Large</Radio>
 					</RadioGroup>
-				</ToolbarGroup>
-			</BlockControls>
-
-			<InspectorControls>
-				<PanelBody>
 				</PanelBody>
 			</InspectorControls>
 			<InnerBlocks/>

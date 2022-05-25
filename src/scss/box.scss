@@ -1,7 +1,21 @@
 .box {
-	padding: var(--space, 1.5rem);
+	--scale-0: 0;
+	--scale-1: 1rem;
+	--scale-2: 2rem;
+	--scale-3: 3rem;
+	/* without box-sizing, it will default to content-box in WP */
+	box-sizing: border-box;
+	padding: var(--scale-0);
 
-	* {
-		color: inherit;
+	&.small {
+		padding: var(--scale-1);
+	}
+
+	&.medium {
+		padding: var(--scale-2);
+	}
+
+	&.large {
+		padding: var(--scale-3);
 	}
 }
