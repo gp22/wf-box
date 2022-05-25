@@ -3,7 +3,7 @@
 	"apiVersion": 2,
 	"name": "wazframe/wf-box",
 	"version": "0.1.0",
-	"title": "Layout",
+	"title": "Box",
 	"category": "design",
 	"icon": "grid-view",
 	"description": "Every Layout components.",
