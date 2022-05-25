@@ -9,6 +9,14 @@
 	"description": "Every Layout components.",
 	"supports": {
 		"html": false,
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
 		"__experimentalBorder": {
 			"color": true,
 			"radius": true,
